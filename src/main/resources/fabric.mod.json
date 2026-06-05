@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "crimson-symphony",
+	"version": "${version}",
+	"name": "Crimson Symphony",
+	"description": "A mod that adds sacrificial items to the game as well as a grappling hook",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/crimson-symphony/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.crimson.symphony.CrimsonSymphony"
+		],
+		"client": [
+			"net.crimson.symphony.CrimsonSymphonyClient"
+		],
+		"fabric-datagen": [
+			"net.crimson.symphony.CrimsonSymphonyDataGenerator"
+		]
+	},
+	"mixins": [
+		"crimson-symphony.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
